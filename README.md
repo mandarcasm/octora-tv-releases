@@ -1,107 +1,196 @@
 <p align="center">
-  <img src="docs/img/icon.png" width="112" alt="OCTORA TV OS icon">
-</p>
-
-<h1 align="center">OCTORA TV OS</h1>
-
-<p align="center">
-  <b>Fix your Android TV from your phone.</b><br>
-  No PC. No cables. No technician. Everything can be undone.
+  <img src="docs/img/banner.png" alt="OCTORA TV OS: fix your TV from your phone" width="100%">
 </p>
 
 <p align="center">
-  <a href="https://github.com/mandarcasm/octora-tv-releases/releases/latest/download/OCTORA-TV-OS.apk"><img alt="Download the APK" src="https://img.shields.io/badge/Download-APK-F7862B?style=for-the-badge&logo=android&logoColor=white"></a>
-  <a href="https://github.com/mandarcasm/octora-tv-releases/releases/latest"><img alt="Latest version" src="https://img.shields.io/github/v/release/mandarcasm/octora-tv-releases?style=for-the-badge&color=252A30&label=version"></a>
-  <a href="https://github.com/mandarcasm/octora-tv-releases/releases"><img alt="Downloads" src="https://img.shields.io/github/downloads/mandarcasm/octora-tv-releases/total?style=for-the-badge&color=252A30"></a>
+  <a href="https://github.com/mandarcasm/octora-tv-releases/releases/latest/download/OCTORA-TV-OS.apk"><img alt="Download the APK" src="https://img.shields.io/badge/Download%20for%20Android-APK-F7862B?style=for-the-badge&logo=android&logoColor=white"></a>
 </p>
 
 <p align="center">
-  <a href="https://mandarcasm.github.io/octora-tv-releases/"><b>Download page with install steps →</b></a><br><sub>Designed and developed by Mandar Kadam</sub>
+  <a href="https://github.com/mandarcasm/octora-tv-releases/releases/latest"><img alt="Latest version" src="https://img.shields.io/github/v/release/mandarcasm/octora-tv-releases?style=flat-square&color=F7862B&label=version"></a>
+  <a href="https://github.com/mandarcasm/octora-tv-releases/releases"><img alt="Downloads" src="https://img.shields.io/github/downloads/mandarcasm/octora-tv-releases/total?style=flat-square&color=252A30&label=downloads"></a>
+  <img alt="Android 8+" src="https://img.shields.io/badge/phone-Android%208%2B-252A30?style=flat-square">
+  <img alt="Android TV and Google TV" src="https://img.shields.io/badge/TV-Android%20TV%20%7C%20Google%20TV-252A30?style=flat-square">
+  <img alt="Free, no ads" src="https://img.shields.io/badge/free-no%20ads%2C%20no%20account-252A30?style=flat-square">
 </p>
 
----
+<p align="center">
+  <a href="https://mandarcasm.github.io/octora-tv-releases/"><b>Install guide</b></a> ·
+  <a href="#what-it-does"><b>Features</b></a> ·
+  <a href="#install-in-4-steps"><b>Install</b></a> ·
+  <a href="#questions"><b>FAQ</b></a> ·
+  <a href="https://github.com/mandarcasm/octora-tv-releases/issues/new/choose"><b>Get help</b></a>
+</p>
 
-## Why it exists
+<br>
 
-Cleaning up a smart TV (switching off the pre-installed apps that slow it down and push adverts, and fixing the
-home screen) normally needs three things: **a PC with cables, someone who knows ADB, and that person standing in
-front of the TV.** We set up TVs for people and kept hitting the same wall: we can't be in every home.
+## The problem
 
-So we put the whole toolkit in a phone app. You do it yourself, at home, in a few minutes.
+Smart TVs ship slow and full of clutter: sponsored rows, pre-installed apps you never asked for, adverts on the
+home screen. Cleaning that up has always needed three things:
+
+| Before OCTORA | With OCTORA |
+|:--|:--|
+| ~~A laptop and cables~~ | **Just your phone**, over your home Wi-Fi |
+| ~~Someone who knows ADB commands~~ | **Nine short stations**, one job each, in plain words |
+| ~~That person standing in front of your TV~~ | **From your sofa**, whenever you like |
+
+We set up TVs for people by hand and kept hitting the same wall: we can't be in every home. So we put the whole
+toolkit in one phone app.
 
 ## What it does
 
-| | |
-|---|---|
-| **Clears the clutter** | Switches off pre-installed apps that slow the TV and push adverts. Your own apps stay. |
-| **A cleaner, faster Home screen** | Your favourite apps first, no sponsored rows. |
-| **Make it yours** | 14 original looks, 15 Faith looks, 8 layouts, clock, weather, festivals. |
-| **Your own pictures** | Share pictures to OCTORA from Gallery, Chrome or WhatsApp. One set all day or separate morning / evening / night sets; a new picture every time you come back to Home, on a timer, or one a day. |
-| **Kids mode** | Only the apps you pick, with a PIN for settings. |
-| **Safety backup first** | Saves your TV's setup before anything changes. |
-| **Restore everything** | One button puts the TV back exactly as it was. |
+<table>
+<tr>
+<td width="50%" valign="top">
+
+**Clears the clutter**<br>
+Switches off pre-installed apps that slow the TV down and push adverts. Your own apps stay.
+
+**A cleaner, faster Home screen**<br>
+Your favourite apps first, no sponsored rows, one press of Home and you're there.
+
+**29 ready looks**<br>
+14 original looks (Cosmos, Monsoon, Himalaya, Cricket Night, Zen Garden…) and 15 Faith looks
+(Shiva, Ganesha, Krishna, Devi, Islam, Christianity, Sikhism, Buddhism and more).
+
+</td>
+<td width="50%" valign="top">
+
+**Your own pictures**<br>
+Share pictures to OCTORA from Gallery, Chrome or WhatsApp. A new one every time you come back to Home, on a
+timer, or one a day. Separate morning, evening and night sets if you like.
+
+**Kids mode**<br>
+Only the apps you pick, with a PIN for settings.
+
+**Safety first**<br>
+A backup before every change, and one **Restore everything** button that puts the TV back exactly as it was.
+
+</td>
+</tr>
+</table>
 
 <p align="center">
-  <img src="docs/img/tv-shiva.webp" width="49%" alt="Shiva look on the TV">
-  <img src="docs/img/tv-cricket.webp" width="49%" alt="Cricket Night look on the TV">
+  <img src="docs/img/tv-shiva.webp" width="49%" alt="Shiva look on the TV: Varanasi ghats at evening">
+  <img src="docs/img/tv-cricket.webp" width="49%" alt="Cricket Night look on the TV with weather and news panels">
 </p>
 
 <p align="center">
-  <img src="docs/img/phone-map.webp" width="180" alt="Nine stations">
-  <img src="docs/img/phone-connect.webp" width="180" alt="Connect your TV">
-  <img src="docs/img/phone-cleanup.webp" width="180" alt="Clean up">
-  <img src="docs/img/phone-looks.webp" width="180" alt="Look shop">
+  <img src="docs/img/phone-map.webp" width="19%" alt="The nine stations">
+  <img src="docs/img/phone-connect.webp" width="19%" alt="Connect your TV, step by step">
+  <img src="docs/img/phone-cleanup.webp" width="19%" alt="Clean up safely">
+  <img src="docs/img/phone-looks.webp" width="19%" alt="Look shop">
+  <img src="docs/img/phone-layout.webp" width="19%" alt="Pick a layout">
 </p>
 
-## Install (on your phone)
+## How it works
 
-1. **Download** [`OCTORA-TV-OS.apk`](https://github.com/mandarcasm/octora-tv-releases/releases/latest/download/OCTORA-TV-OS.apk).
-   Opening the link from Instagram? Tap **⋮ → Open in browser** first: Instagram's browser can't download apps.
-2. **Allow the install:** open the file, tap **Settings → Allow from this source**, go back, tap **Install**.
+```mermaid
+flowchart LR
+    P["Your phone<br/>OCTORA app"] -- "home Wi-Fi<br/>(you press Allow on the TV)" --> T["Your Android TV"]
+    P --> B["1. Safety backup"]
+    B --> C["2. Clean up"]
+    C --> H["3. New Home screen"]
+    H --> L["4. Look, layout, panels"]
+    L --> R["Restore everything,<br/>any time"]
+```
+
+The phone talks to the TV the same way a technician's laptop would (Android's debugging connection), but every
+step is a button, every change is backed up first, and nothing is ever deleted or rooted.
+
+## Install in 4 steps
+
+> **Opening this from Instagram?** Tap **⋮ → Open in browser** first. Instagram's browser can't download apps.
+
+1. **Download** [`OCTORA-TV-OS.apk`](https://github.com/mandarcasm/octora-tv-releases/releases/latest/download/OCTORA-TV-OS.apk) on your **phone**.
+2. **Allow the install:** open the file → **Settings** → **Allow from this source** → back → **Install**.
    If Play Protect asks, tap **More details → Install anyway**.
 3. **On the TV:** Settings → Device Preferences → About → click **Build** 7 times → Developer options →
-   turn on **USB debugging** (and **Network debugging** if shown).
+   turn on **USB debugging** (and **Network debugging** if you see it).
 4. **Connect:** phone and TV on the same Wi-Fi. Open OCTORA, tap **Start**, press **Allow** on the TV.
 
-You can switch debugging off again when you're done. Turn it back on any time you want to change or restore something.
+Done for the day? You can switch debugging off again. Turn it back on whenever you want to change or restore something.
+The [install guide](https://mandarcasm.github.io/octora-tv-releases/) has the same steps with pictures.
 
-**Needs:** an Android phone (Android 8+) and an Android TV / Google TV (Mi / Xiaomi, Redmi, Acer, Croma,
-Skyworth, TCL, Vu and others). Not for Samsung (Tizen), LG (webOS) or other non-Android TVs.
+## Questions
 
-## Safe by design
+<details>
+<summary><b>Is it safe? Can it break my TV?</b></summary>
+<br>
+OCTORA never roots the TV and never deletes system apps. It switches apps off (they can be switched back on), saves
+a backup before every change, and keeps what your TV needs: Play Store, keyboard, voice, Chromecast, HDMI and tuner
+inputs. <b>Restore everything</b> puts the TV back as it was.
+</details>
 
-- Never roots the TV, never deletes system apps. Apps are **switched off**, and can be switched back on.
-- A **backup** is saved before every change; **Restore everything** undoes it all.
-- Keeps the things your TV needs: Play Store, keyboard, voice, Chromecast, HDMI and tuner inputs.
-- **No account, no tracking, no ads.** The app only talks to your TV on your home network, and asks GitHub
-  whether a newer version exists. See [PRIVACY.md](PRIVACY.md).
+<details>
+<summary><b>Which TVs does it work with?</b></summary>
+<br>
+Android TV and Google TV sets and boxes: Mi / Xiaomi, Redmi, Acer, Croma, Skyworth, TCL, Vu, OnePlus, Realme,
+Sony and others. Not Samsung (Tizen), LG (webOS) or other non-Android TVs.
+</details>
 
-## Why no character, movie or brand themes?
-
+<details>
+<summary><b>Why are there no character, movie or brand themes?</b></summary>
+<br>
 Those pictures belong to their owners, so we can't ship them in a public app. OCTORA comes with its own original
-looks, and the **Customise** studio lets you load **your own pictures** from your phone and build any look you
-like for your own TV.
+looks, and you can share <b>your own pictures</b> into the app to build any look you like for your own TV.
+</details>
 
-## Updates
+<details>
+<summary><b>Why isn't it on the Play Store? How do I get updates?</b></summary>
+<br>
+We release it here so fixes reach you quickly. The app checks this page itself and shows a <b>Download</b> banner
+when a new version is ready. Install it over the old one: your TV and your choices stay as they are.
+</details>
 
-The app isn't on the Play Store, so it checks this page for new versions itself and shows a **Download** banner
-when one is ready. Install it over the old one: your TV and your choices stay as they are.
+<details>
+<summary><b>Does it collect my data?</b></summary>
+<br>
+No account, no tracking, no ads. The app talks only to your TV on your home network, and asks GitHub whether a newer
+version exists. See <a href="PRIVACY.md">PRIVACY.md</a>.
+</details>
 
-## Verify your download
-
-Every APK is signed with the same release key. Each release lists the file's SHA-256 checksum, and a
-`.sha256` file is attached. On a PC:
+<details>
+<summary><b>How do I check the download is genuine?</b></summary>
+<br>
+Every APK is signed with the same OCTORA release key, and each release lists its SHA-256 checksum (also attached as a
+<code>.sha256</code> file).
 
 ```
 certutil -hashfile OCTORA-TV-OS.apk SHA256      # Windows
 sha256sum OCTORA-TV-OS.apk                      # macOS / Linux
 ```
+</details>
+
+## Who made it
+
+<table>
+<tr>
+<td width="140" valign="top"><img src="docs/img/mandar.webp" width="120" alt="Mandar Kadam"></td>
+<td valign="top">
+
+**Mandar Kadam** · designer and developer of OCTORA TV OS<br>
+CTO, [MeetYourReach](https://www.meetyourreach.com) & Pranav Wadkar Group
+
+OCTORA started with setting up TVs for people by hand, one home at a time, with a laptop and cables. Mandar
+designed and built the app so anyone can do the same job themselves from their phone.
+
+> *"I believe technology should do more than solve immediate problems; it should create opportunities for what comes next."*
+
+</td>
+</tr>
+</table>
 
 ## Help
 
-Stuck on a step? [Open an issue](https://github.com/mandarcasm/octora-tv-releases/issues/new/choose) with your TV
-model and the screen you're on, or message us on Instagram [@meetyourreach](https://instagram.com/meetyourreach).
+Stuck on a step? [Open a help request](https://github.com/mandarcasm/octora-tv-releases/issues/new/choose) with your
+TV model and the screen you're on, or message [@meetyourreach](https://instagram.com/meetyourreach) on Instagram.
 
 ---
 
-<p align="center"><sub>OCTORA TV OS · Designed and developed by <b>Mandar Kadam</b> · <a href="https://www.meetyourreach.com">MeetYourReach</a> · This repository holds releases only. © 2026 All rights reserved.</sub></p>
+<p align="center">
+  <img src="docs/img/icon.png" width="44" alt=""><br>
+  <sub><b>OCTORA TV OS</b> · Designed and developed by Mandar Kadam · <a href="https://www.meetyourreach.com">MeetYourReach</a><br>
+  This repository holds releases only. © 2026 All rights reserved.</sub>
+</p>
