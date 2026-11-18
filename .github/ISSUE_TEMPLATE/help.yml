@@ -1,0 +1,23 @@
+name: I need help
+description: Stuck on a step, or something did not work
+labels: [help]
+body:
+  - type: input
+    id: tv
+    attributes:
+      label: TV brand and model
+      placeholder: e.g. Mi TV 4A 43, Acer R3, Croma 32
+    validations:
+      required: true
+  - type: input
+    id: phone
+    attributes:
+      label: Phone model and app version
+      placeholder: e.g. OnePlus Nord 3, OCTORA 0.6.4
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: Which screen or station you were on, and what you saw. A screenshot helps a lot.
+    validations:
+      required: true

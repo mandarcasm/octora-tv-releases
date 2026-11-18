@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OCTORA TV OS by Mandar</title>
+<meta name="description" content="Clean up and personalise your Android TV from your phone. No PC, no cables, no technician. Free download.">
+<meta name="theme-color" content="#101214">
+<meta property="og:title" content="OCTORA TV OS – fix your TV from your phone">
+<meta property="og:description" content="Remove the clutter, get a faster home screen, make it yours. Everything can be undone.">
+<meta property="og:image" content="https://mandarcasm.github.io/octora-tv-releases/img/og.png">
+<meta property="og:type" content="website">
+<link rel="icon" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#101214;--raised:#1A1D21;--high:#252A30;--paper:#F2F1EC;--dim:#A9AEB4;
+  --saffron:#F7862B;--on-saffron:#101214;--alert:#EF7A62;
+  --r:14px;--max:1080px;
+  --fs-hero:clamp(2.4rem,7vw,4.4rem);--fs-h2:clamp(1.5rem,3.6vw,2.1rem);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{background:var(--ink);color:var(--paper);font:400 1.0625rem/1.6 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:"Space Grotesk",Inter,sans-serif;line-height:1.1;letter-spacing:-.02em}
+a{color:var(--saffron)}
+:focus-visible{outline:3px solid var(--saffron);outline-offset:3px;border-radius:6px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+.dim{color:var(--dim)}
+header{display:flex;align-items:center;justify-content:space-between;padding:20px 0}
+header img{height:22px;width:auto}
+header a{color:var(--dim);font-size:.9rem;text-decoration:none}
+header a:hover{color:var(--paper)}
+
+/* In-app browser warning: Instagram/Facebook cannot download APK files */
+#inapp{display:none;background:var(--saffron);color:var(--on-saffron);padding:16px 20px}
+#inapp.show{display:block}
+#inapp strong{display:block;font-size:1.05rem}
+#inapp a{display:inline-block;margin-top:10px;background:var(--ink);color:var(--paper);padding:12px 18px;border-radius:10px;font-weight:600;text-decoration:none;min-height:44px}
+
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;padding:40px 0 64px}
+.kicker{font-weight:600;color:var(--saffron);font-size:.95rem;letter-spacing:.02em}
+.maker{display:grid;grid-template-columns:160px 1fr;gap:32px;align-items:start;max-width:860px;margin-top:28px}
+.maker img{width:160px;height:160px;border-radius:50%;object-fit:cover;display:block}
+.maker h3{font-size:1.35rem}
+.maker .role{color:var(--saffron);font-weight:600;font-size:.95rem;margin:4px 0 14px}
+.maker p{color:var(--dim);max-width:62ch}
+.maker blockquote{margin-top:16px;padding-left:16px;border-left:3px solid var(--saffron);color:var(--paper);font-style:italic;max-width:62ch}
+@media (max-width:600px){.maker{grid-template-columns:1fr;gap:20px}.maker img{width:120px;height:120px}}
+.hero h1{font-size:var(--fs-hero);margin:12px 0 18px;max-width:14ch}
+.hero p.lead{font-size:1.15rem;color:var(--dim);max-width:52ch}
+.cta{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:28px}
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 24px;border-radius:12px;font-weight:600;text-decoration:none;font-size:1.05rem}
+.btn-main{background:var(--saffron);color:var(--on-saffron)}
+.btn-main:hover{filter:brightness(1.08)}
+.btn-ghost{background:var(--raised);color:var(--paper)}
+.btn svg{width:20px;height:20px}
+.meta{margin-top:14px;font-size:.9rem;color:var(--dim)}
+.meta code{font-size:.8rem;word-break:break-all}
+.phone{justify-self:center;width:min(300px,80vw);border-radius:28px;border:8px solid var(--raised);overflow:hidden;background:var(--raised)}
+.phone img{display:block;width:100%;height:auto}
+
+section{padding:64px 0;border-top:1px solid var(--high)}
+section h2{font-size:var(--fs-h2);margin-bottom:12px}
+section > .wrap > p{max-width:62ch}
+
+.why{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:32px}
+.why h3{font-size:1.15rem;margin-bottom:6px}
+.why .old{text-decoration:line-through;color:var(--dim)}
+
+ol.steps{list-style:none;counter-reset:s;display:grid;gap:20px;margin-top:28px;max-width:720px}
+ol.steps li{counter-increment:s;display:grid;grid-template-columns:44px 1fr;gap:16px}
+ol.steps li::before{content:counter(s);width:44px;height:44px;border-radius:50%;background:var(--high);color:var(--saffron);display:grid;place-items:center;font:700 1.1rem "Space Grotesk",sans-serif}
+ol.steps h3{font-size:1.1rem;margin:8px 0 4px}
+
+.tvs{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:32px}
+.tvs img{width:100%;height:auto;border-radius:10px;display:block}
+.tvs figcaption{font-size:.9rem;color:var(--dim);margin-top:8px}
+@media (max-width:860px){.tvs{grid-template-columns:1fr}}
+.shots{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:8px 0 16px;margin-top:28px}
+.shots figure{flex:0 0 220px;scroll-snap-align:start}
+.shots img{width:100%;height:auto;border-radius:18px;border:6px solid var(--raised);display:block}
+.shots figcaption{font-size:.9rem;color:var(--dim);margin-top:8px}
+
+.facts{display:grid;grid-template-columns:repeat(2,1fr);gap:16px 40px;margin-top:28px;max-width:860px}
+.facts div{padding-left:16px;border-left:3px solid var(--saffron)}
+.facts h3{font-size:1.05rem;margin-bottom:4px}
+
+details{border-bottom:1px solid var(--high);max-width:760px}
+summary{cursor:pointer;padding:18px 0;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:16px;min-height:44px}
+summary::after{content:"+";color:var(--saffron);font-size:1.3rem;line-height:1}
+details[open] summary::after{content:"–"}
+details p{padding:0 0 18px;color:var(--dim);max-width:65ch}
+
+footer{padding:40px 0 56px;border-top:1px solid var(--high);color:var(--dim);font-size:.9rem}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between}
+
+@media (max-width:860px){
+  .hero{grid-template-columns:1fr;gap:36px;padding-top:16px}
+  .why{grid-template-columns:1fr;gap:24px}
+  .facts{grid-template-columns:1fr}
+}
+@media (max-width:420px){.btn{width:100%;justify-content:center}}
+</style>
+</head>
+<body>
+
+<div id="inapp" role="alert">
+  <div class="wrap">
+    <strong>Instagram can't download apps. Open this page in Chrome first.</strong>
+    Tap the <b>⋮</b> or <b>…</b> menu at the top right, then <b>Open in browser</b>.
+    <br><a id="inapp-chrome" href="#">Open in Chrome</a>
+  </div>
+</div>
+
+<div class="wrap">
+  <header>
+    <img src="img/logo-white.png" alt="OCTORA TV OS" width="164" height="22">
+    <a href="https://github.com/mandarcasm/octora-tv-releases">GitHub</a>
+  </header>
+
+  <main>
+  <div class="hero">
+    <div>
+      <p class="kicker">Designed and developed by Mandar Kadam · Free for Android TV and Google TV</p>
+      <h1>Fix your TV from your phone.</h1>
+      <p class="lead">Cleaning up a TV used to need a laptop, cables, technical know-how and someone standing in front of the screen. OCTORA puts that whole toolkit in your phone, so you can do it yourself at home in a few minutes.</p>
+      <div class="cta">
+        <a class="btn btn-main" id="dl" href="https://github.com/mandarcasm/octora-tv-releases/releases/latest/download/OCTORA-TV-OS.apk">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M5 21h14"/></svg>
+          Download for Android
+        </a>
+        <a class="btn btn-ghost" href="#how">How to install</a>
+      </div>
+      <p class="meta" id="meta">For your <b>phone</b> (Android 8 or newer). About 65 MB. Free, no account, no ads.</p>
+    </div>
+    <div class="phone"><img src="img/phone-map.webp" alt="OCTORA app: the map of nine stations, from Connect TV to Pick a layout" width="540" height="1200" fetchpriority="high"></div>
+  </div>
+
+  <section aria-labelledby="why">
+    <div class="wrap" style="padding:0">
+      <h2 id="why">Why we built it</h2>
+      <p class="dim">We set up TVs for people, and kept hitting the same wall: we can't be in every home. So we packed the job into an app.</p>
+      <div class="why">
+        <div><h3><span class="old">A PC and cables</span><br>Just your phone</h3><p class="dim">The phone talks to the TV over your home Wi-Fi.</p></div>
+        <div><h3><span class="old">A tech expert</span><br>Simple steps</h3><p class="dim">Nine short stations, one job each, in plain words.</p></div>
+        <div><h3><span class="old">Someone at the TV</span><br>From your sofa</h3><p class="dim">Do it at home, whenever you want, as often as you like.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="what">
+    <div class="wrap" style="padding:0">
+      <h2 id="what">What it does</h2>
+      <div class="facts">
+        <div><h3>Clears the clutter</h3><p class="dim">Switches off pre-installed apps that slow the TV and push adverts. Your own apps stay.</p></div>
+        <div><h3>A faster, cleaner Home screen</h3><p class="dim">Your favourite apps first, no sponsored rows.</p></div>
+        <div><h3>Make it yours</h3><p class="dim">14 original looks, 15 Faith looks, 8 layouts. Or share your own pictures to the app: one set all day or by time of day, a new one each time you come back to Home.</p></div>
+        <div><h3>Kids mode</h3><p class="dim">Only the apps you pick, with a PIN for settings.</p></div>
+        <div><h3>Safety backup first</h3><p class="dim">The app saves your TV's setup before it changes anything.</p></div>
+        <div><h3>Restore everything</h3><p class="dim">One button puts the TV back exactly as it was.</p></div>
+      </div>
+      <div class="tvs">
+        <figure><img loading="lazy" src="img/tv-shiva.webp" alt="TV home screen with the Shiva look: Varanasi ghats at evening" width="1280" height="720"><figcaption>Faith look: Shiva</figcaption></figure>
+        <figure><img loading="lazy" src="img/tv-cricket.webp" alt="TV home screen with the Cricket Night look, favourites and panels" width="1280" height="720"><figcaption>Cricket Night, with weather and news</figcaption></figure>
+      </div>
+      <div class="shots" tabindex="0" aria-label="App screenshots, scroll sideways">
+        <figure><img loading="lazy" src="img/phone-connect.webp" alt="Connect your TV, step by step" width="540" height="1200"><figcaption>Connect, step by step</figcaption></figure>
+        <figure><img loading="lazy" src="img/phone-cleanup.webp" alt="Clean up: apps that are safe to turn off" width="540" height="1200"><figcaption>Clean up safely</figcaption></figure>
+        <figure><img loading="lazy" src="img/phone-looks.webp" alt="Look shop with home screen looks" width="540" height="1200"><figcaption>Pick a look</figcaption></figure>
+        <figure><img loading="lazy" src="img/phone-layout.webp" alt="Pick a layout for your apps" width="540" height="1200"><figcaption>Pick a layout</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="how" aria-labelledby="howh">
+    <div class="wrap" style="padding:0">
+      <h2 id="howh">How to install</h2>
+      <p class="dim">The app goes on your <b>phone</b>, not the TV. It is not on the Play Store, so Android asks you once to allow it.</p>
+      <ol class="steps">
+        <li><div><h3>Download the app</h3><p class="dim">Tap <b>Download for Android</b> above. If Chrome warns about the file type, tap <b>Download anyway</b>.</p></div></li>
+        <li><div><h3>Allow the install</h3><p class="dim">Open the file. Android says installing unknown apps is blocked: tap <b>Settings</b>, switch on <b>Allow from this source</b>, go back, tap <b>Install</b>. If Play Protect asks, tap <b>More details → Install anyway</b>.</p></div></li>
+        <li><div><h3>Turn on debugging on the TV</h3><p class="dim">On the TV: Settings → Device Preferences → About → click <b>Build</b> 7 times. Then Developer options → switch on <b>USB debugging</b> (and <b>Network debugging</b> if you see it). The app shows each step with pictures.</p></div></li>
+        <li><div><h3>Connect and play</h3><p class="dim">Phone and TV on the same Wi-Fi. Open OCTORA, tap <b>Start</b>, and press <b>Allow</b> on the TV when it asks. You can switch debugging off again when you're done.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section aria-labelledby="faq">
+    <div class="wrap" style="padding:0">
+      <h2 id="faq">Questions</h2>
+      <details><summary>Is it safe? Can it break my TV?</summary><p>OCTORA never roots the TV and never deletes system apps. It switches apps off (they can be switched back on), saves a backup before every change, and has a Restore everything button that puts the TV back as it was.</p></details>
+      <details><summary>Which TVs does it work with?</summary><p>Android TV and Google TV sets and boxes, such as Mi / Xiaomi, Redmi, Acer, Croma, Skyworth, TCL, Vu and others. Menu names differ a little between makers; the app tells you what to look for. It does not work on Samsung (Tizen), LG (webOS) or other non-Android TVs.</p></details>
+      <details><summary>Why are there no character, movie or brand themes?</summary><p>Those pictures belong to their owners, so we can't ship them in a public app. The app comes with its own original looks, and you can load <b>your own pictures</b> from your phone to build any look you like, for your own TV.</p></details>
+      <details><summary>Why isn't it on the Play Store?</summary><p>We release it directly so we can ship fixes quickly. The app checks for new versions itself and shows a Download button when one is ready. Every file is signed with the same key, and its SHA-256 checksum is published with each release.</p></details>
+      <details><summary>Does it collect my data?</summary><p>No account, no tracking, no ads. The app only talks to your TV on your home network, and asks GitHub whether a new version exists.</p></details>
+      <details><summary>Instagram says it can't open the file</summary><p>Instagram's built-in browser can't download apps. Tap the ⋮ or … menu at the top right and choose Open in browser (or Open in Chrome), then tap Download again.</p></details>
+    </div>
+  </section>
+  <section aria-labelledby="maker">
+    <div class="wrap" style="padding:0">
+      <h2 id="maker">Who made it</h2>
+      <div class="maker">
+        <img src="img/mandar.webp" alt="Mandar Kadam" width="400" height="400" loading="lazy">
+        <div>
+          <h3>Mandar Kadam</h3>
+          <p class="role">Designer and developer of OCTORA TV OS · CTO, MeetYourReach &amp; Pranav Wadkar Group</p>
+          <p>Mandar leads technology at MeetYourReach: platforms, automation, CRM and the systems behind a business. OCTORA started from setting up TVs for people by hand, with a laptop and cables, one home at a time. He designed and built the app so anyone can do the same job themselves from their phone.</p>
+          <blockquote>"I believe technology should do more than solve immediate problems; it should create opportunities for what comes next."</blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+</div>
+
+<footer>
+  <div class="wrap">
+    <span>OCTORA TV OS · Designed and developed by Mandar Kadam · <a href="https://www.meetyourreach.com">MeetYourReach</a></span>
+    <span><a href="https://github.com/mandarcasm/octora-tv-releases/releases">All versions and checksums</a></span>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var ua = navigator.userAgent || "";
+  var inApp = /Instagram|FBAN|FBAV|FB_IAB|Line\/|Snapchat/i.test(ua);
+  if (inApp) {
+    document.getElementById("inapp").classList.add("show");
+    var here = location.href.replace(/^https?:\/\//, "");
+    var chrome = "intent://" + here + "#Intent;scheme=https;package=com.android.chrome;end";
+    document.getElementById("inapp-chrome").href = chrome;
+    document.getElementById("dl").href = chrome;
+  }
+  // Show the latest version and its checksum, read from the public release list.
+  fetch("https://api.github.com/repos/mandarcasm/octora-tv-releases/releases/latest")
+    .then(function (r) { return r.ok ? r.json() : null; })
+    .then(function (j) {
+      if (!j || !j.tag_name) return;
+      var apk = (j.assets || []).filter(function (a) { return a.name === "OCTORA-TV-OS.apk"; })[0];
+      var mb = apk ? Math.round(apk.size / 1048576) + " MB" : "about 65 MB";
+      var m = (j.body || "").match(/[a-f0-9]{64}/);
+      document.getElementById("meta").innerHTML =
+        "Version " + j.tag_name.replace(/^v/, "") + " for your <b>phone</b> (Android 8 or newer). " + mb + ". Free, no account, no ads." +
+        (m ? "<br>SHA-256 <code>" + m[0] + "</code>" : "");
+    })
+    .catch(function () {});
+})();
+</script>
+</body>
+</html>
